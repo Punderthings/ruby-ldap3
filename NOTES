@@ -1,6 +1,10 @@
+0.10.1
+-----
+* bearded/ruby-ldap PRs 44, 45, 46 pulled up
+
 0.10.0
 -----
-* Project forked, renamed to ruby-ldap3, porting to Ruby 3.x with previous PRs
+* Project forked, renamed to ruby-ldap3
 
 0.9.20
 -----
