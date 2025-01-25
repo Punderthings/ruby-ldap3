@@ -1,3 +1,7 @@
+0.10.0
+-----
+* Project forked, renamed to ruby-ldap3, porting to Ruby 3.x with previous PRs
+
 0.9.20
 -----
 * Added support of LDAP_OPT_X_TLS_NEWCTX.
