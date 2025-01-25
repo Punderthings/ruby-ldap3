@@ -11,9 +11,7 @@ It provides the interface to some LDAP libraries (e.g. OpenLDAP, Netscape SDK an
   s.authors = ['Shane Curcuru', 'Alexey.Chebotar']
   s.email = 'shane@punderthings.com'
   s.homepage = 'https://github.com/Punderthings/ruby-ldap3'
-  s.licenses = [ 'BSD-3-Clause', 'COPYING' ]
-
-  s.has_rdoc = true
+  s.licenses = [ 'BSD-3-Clause', 'Nonstandard' ]
 
   s.require_path = 'lib'
 

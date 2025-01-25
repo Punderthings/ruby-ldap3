@@ -1,6 +1,6 @@
 #!/bin/sh
 
-TEST=`dirname $0`
+TEST=$(dirname $0)
 RUBY=$1
 echo $SRCDIR
 LOGFILE=test.log
@@ -37,14 +37,14 @@ print_usage(){
 }
 
 
-if [ x"$4" = x"" ]
+if [ "$4" = "" ]
 then
   LDAPSCHEMADIR=
 else
   LDAPSCHEMADIR=$4
 fi
 
-if [ x"$3" = x"" ]
+if [ "$3" = "" ]
 then
   LDAPD=slapd
 else
@@ -139,8 +139,8 @@ if [ -f "$LOGFILE" ]; then
   rm $LOGFILE
 fi
 
-echo -n "Do you want to run scripts?[y/n]"
-read ans
+echo "Do you want to run scripts?[y/n]"
+read -r ans
 case "$ans" in
 y*|Y*)
   RESULT=ok
@@ -158,13 +158,13 @@ y*|Y*)
   done
   ;;
 *)
-  echo -n "Press any key to stop the server."
-  read ans
+  echo "Press any key to stop the server."
+  read -r ans
   ;;
 esac
 
 # $LDAPSEARCH -b "o=JAIST, c=JP" -h localhost -p $SSLPORT -Z "(objectclass=*)"
 
 # stop slapd
-kill -TERM `cat $PIDFILE`
+kill -TERM $(cat $PIDFILE)
 rm -rf $DBDIR
