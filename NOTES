@@ -1,3 +1,7 @@
+0.10.4
+------
+* Fix up RB_LDAP_MINOR_VERSION and RB_LDAP_PATCH_VERSION to agree with RB_LDAP_VERSION
+
 0.10.3
 -----
 * Cast (rb_block_call_func_t) per https://github.com/bearded/ruby-ldap/issues/47#issuecomment-1645066553
