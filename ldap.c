@@ -201,7 +201,8 @@ rb_ldap_hash2mods (VALUE self, VALUE op, VALUE hash)
   VALUE tmp;
 
   tmp = rb_assoc_new (op, rb_ary_new ());
-  rb_iterate (rb_each, hash, rb_ldap_hash2mods_i, tmp);
+  /* Explicitly cast value per: https://github.com/bearded/ruby-ldap/issues/47#issuecomment-1645066553 */
+  rb_iterate (rb_each, hash, (rb_block_call_func_t) rb_ldap_hash2mods_i, tmp);
 
   return rb_ary_entry (tmp, 1);
 }
