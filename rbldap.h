@@ -28,7 +28,7 @@
 #define RB_LDAP_MAJOR_VERSION 0
 #define RB_LDAP_MINOR_VERSION 9
 #define RB_LDAP_PATCH_VERSION 20
-#define RB_LDAP_VERSION "0.10.1"
+#define RB_LDAP_VERSION "0.10.3"
 
 #define LDAP_GET_OPT_MAX_BUFFER_SIZE    (1024)	/* >= sizeof(LDAPAPIInfo) */
 

@@ -1,3 +1,8 @@
+0.10.3
+-----
+* Cast (rb_block_call_func_t) per https://github.com/bearded/ruby-ldap/issues/47#issuecomment-1645066553
+* Rebuild and push correct gem to Rubygems
+
 0.10.1
 -----
 * bearded/ruby-ldap PRs 44, 45, 46 pulled up

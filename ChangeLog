@@ -1,7 +1,8 @@
 Sun Jan 25 08:00:00 UTC 2024 Shane Curcuru <shane@punderthings.com>
 	 * Forked from bearded/ruby-ldap at 3cfab0fd05c9fdf4c92c60d52457a6dadad4c8c0
 	 * Renaming to ruby-ldap3 to avoid conflicts
-	 * Applying existing PRs on bearded to run on Ruby 3.x
+	 * Applying existing PRs and comments from bearded to run on Ruby 3.x
+	 * See NOTES for more details and update to 0.10.x
 
 Wed Jul 11 21:58:38 UTC 2018 Alexey Chebotar <alexey.chebotar@gmail.com>
   * Version 0.9.20
